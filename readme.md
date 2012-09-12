@@ -11,5 +11,6 @@ Also, if the contents of the textarea are non-nil and have changed, an ajax POST
 # Usage
 ```
 $("#some-text-area").markdownPreview("#some-preview-div", optionalRefreshTime);
+
 $("#some-text-area").timedPersist("http://url.com", parameterName, optionalPostInterval);
 ```
