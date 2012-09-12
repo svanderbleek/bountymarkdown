@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <script type="text/javascript" src="lib/jquery.js"></script>
+    <script type="text/javascript" src="lib/converter.js"></script>
+    <script type="text/javascript" src="lib/sanitizer.js"></script>
+    <script type="text/javascript" src="src/markdownpreview.js"></script>
+    <script type="text/javascript" src="src/timedpersist.js"></script>
+  </head>
+  <body>
+    <textarea id="bounty_description"></textarea>
+    <div id="preview"></div>
+    <script type="text/javascript">
+      $("#bounty_description")
+        .markdownPreview("#preview")
+        .timedPersist("http://nothing.com", "content")
+    </script>
+  </body>
+</html>
